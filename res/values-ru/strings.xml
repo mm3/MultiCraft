@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="start">Повторить</string>
+    <string name="About">О проекте "MultiCraft"</string>
+    <string name="unpack">Установка обновлений&#8230;</string>
+    <string name="hello">MultiCraft — проект с открытым исходным кодом на основе Minetest и Overcraft Origins.</string>
+    <string name="open"><u>Нажмите для продолжения</u></string>
+    <string name="warning">Во время обновления не сворачивайте приложение. Иначе обновление может пройти с ошибкой.</string>
+    <string name="check">Проверка обновлений&#8230;</string>
+    <string name="disconnect">Отсутствует подключение к Интернету! Повторите попытку.</string>
+    <string name="download">Загрузка кэша. Пожалуйста, подождите&#8230;</string>
+    <string name="wiki">http://minetest.ru/wiki/</string>
+    <string name="rmold">Удаление устаревших файлов&#8230;</string>
+    <string name="bad">Ваш игровой мир будет пересоздан&#8230;</string>
+    <string name="AppNextW">Добро пожаловать в "MultiCraft"!</string>
+
+    <!-- rate -->
+    <string name="rta_dialog_title">Оцените MultiCraft — Free Miner!</string>
+    <string name="rta_dialog_message">Поставьте оценку MultiCraft. Пожалуйста, скажите: Вам понравилась игра?</string>
+    <string name="rta_dialog_ok">Понравилась!</string>
+    <string name="rta_dialog_cancel">Отвечу позже&#8230;</string>
+    <string name="rta_dialog_no">НЕ понравилась</string>
+
+</resources>
