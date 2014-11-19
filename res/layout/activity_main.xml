@@ -17,30 +17,6 @@
         android:text="@string/open"
         android:textSize="30sp" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/header" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:alpha="0.9"
-        android:background="#ceff99"
-        android:gravity="center"
-        android:text="@string/hello"
-        android:textColor="#000000"
-        android:textSize="25dp" />
-
     <LinearLayout
         android:id="@+id/banner"
         android:layout_width="wrap_content"
@@ -61,5 +37,22 @@
         android:onClick="About"
         android:text="@string/About"
         android:textSize="18sp" />
+
+    <com.startapp.android.publish.banner.banner3d.Banner3D
+        android:id="@+id/startApp3DBanner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+    </com.startapp.android.publish.banner.banner3d.Banner3D>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/banner"
+        android:src="@drawable/header" />
 
 </RelativeLayout>

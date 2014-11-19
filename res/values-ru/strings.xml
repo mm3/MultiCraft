@@ -10,7 +10,6 @@
     <string name="check">Проверка обновлений&#8230;</string>
     <string name="disconnect">Отсутствует подключение к Интернету! Повторите попытку.</string>
     <string name="download">Загрузка кэша. Пожалуйста, подождите&#8230;</string>
-    <string name="wiki">http://minetest.ru/wiki/</string>
     <string name="rmold">Удаление устаревших файлов&#8230;</string>
     <string name="bad">Ваш игровой мир будет пересоздан&#8230;</string>
     <string name="AppNextW">Добро пожаловать в "MultiCraft"!</string>
@@ -21,5 +20,10 @@
     <string name="rta_dialog_ok">Понравилась!</string>
     <string name="rta_dialog_cancel">Отвечу позже&#8230;</string>
     <string name="rta_dialog_no">НЕ понравилась</string>
+
+    <!-- update -->
+    <string name="update_yes">Обновиться!</string>
+    <string name="update_no">Напомнить позже&#8230;</string>
+    <string name="update_ignore">Игнорировать</string>
 
 </resources>

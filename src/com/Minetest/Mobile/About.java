@@ -1,12 +1,10 @@
-package com.Minetest.Mobile;
-
-/* –азработано MoNTE48, 2014.
- *  од запрещено измен€ть или распростран€ть,
- * без разрешени€ автора!
- *  онтакты: MoNTE48@mail.ua
+/* Разработано MoNTE48, 2014.
+ * Код запрещено изменять или распространять,
+ * без разрешения автора!
+ * Контакты: MoNTE48@mail.ua
  */
-
-import com.MoNTE48.MultiCraft.R;
+ 
+package com.Minetest.Mobile;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,6 +16,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
+
+import com.MoNTE48.MultiCraft.R;
 
 public class About extends Activity {
 	@Override
@@ -40,31 +40,5 @@ public class About extends Activity {
 		intent.setData(Uri
 				.parse("https://github.com/kskkbys/Android-RateThisApp"));
 		startActivity(intent);
-	}
-
-	public void MinetestReadme(View view) {
-		// вывожу тост
-		Toast toast = Toast.makeText(getApplicationContext(), "Opening...",
-				Toast.LENGTH_LONG);
-		toast.show();
-		// открываю сайт ч-з Uri
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-		intent.setData(Uri
-				.parse("https://github.com/minetest/minetest/blob/master/README.txt"));
-		startActivity(intent);
-	}
-
-	public void wiki(View view) {
-		// вывожу тост
-		Toast toast = Toast.makeText(getApplicationContext(), "Opening...",
-				Toast.LENGTH_LONG);
-		toast.show();
-		// открываю сайт ч-з Uri
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-
-		intent.setData(Uri
-				.parse((String) getResources().getText(R.string.wiki)));
-		startActivity(intent);
-
 	}
 }

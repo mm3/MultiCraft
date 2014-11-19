@@ -1,3 +1,9 @@
+/* Разработано MoNTE48, 2014.
+ * Код запрещено изменять или распространять,
+ * без разрешения автора!
+ * Контакты: MoNTE48@mail.ua
+ */
+
 package com.Minetest.Mobile;
 
 import java.io.BufferedInputStream;
@@ -29,6 +35,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
@@ -41,8 +48,8 @@ public class Start extends Activity {
 	String unzipLocation = Environment.getExternalStorageDirectory()
 			+ "/minetest/";
 	String zipFile = Environment.getExternalStorageDirectory() + "/Files.zip";
-	final String URLZIP = "http://yourURL/cache/MultiCraft/1.1.2/Files.zip";
-	private String const_ver = "1.1.2";
+	final String URLZIP = "http://URL/cache/MultiCraft/1.2/Files.zip";
+	private String const_ver = "1.2";
 	private String[] bad_ver = new String[] { "0" };
 	String SDAllPath = "";
 
@@ -61,6 +68,7 @@ public class Start extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		setContentView(R.layout.cache);
 		// Initialization
 		String path = "/minetest/";
@@ -76,6 +84,7 @@ public class Start extends Activity {
 		next.setVisibility(View.GONE);
 		checkD();
 		if (version.exists()) {
+			mProgressDialog.dismiss();
 			Handler handler = new Handler();
 			handler.postDelayed(new Runnable() {
 				public void run() {
@@ -107,6 +116,7 @@ public class Start extends Activity {
 				next.setVisibility(View.GONE);
 				checkD();
 				if (version.exists()) {
+					mProgressDialog.dismiss();
 					Handler handler = new Handler();
 					handler.postDelayed(new Runnable() {
 						public void run() {
@@ -167,7 +177,7 @@ public class Start extends Activity {
 	private void nnext() {
 		Intent intent = new Intent(this, StartNative.class);
 		mProgressDialog.dismiss();
-		
+
 		startActivity(intent);
 	}
 
@@ -349,7 +359,7 @@ public class Start extends Activity {
 					DownloadZip mew = new DownloadZip();
 					mew.execute(URLZIP);
 				}
-			}, 3000); // * ms
+			}, 2000); // * ms
 
 		} else
 			Toast.makeText(Start.this, R.string.disconnect, Toast.LENGTH_LONG)

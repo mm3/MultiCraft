@@ -1,3 +1,9 @@
+/* Разработано MoNTE48, 2014.
+ * Код запрещено изменять или распространять,
+ * без разрешения автора!
+ * Контакты: MoNTE48@mail.ua
+ */
+
 package com.Minetest.Mobile;
 
 import android.util.Log;

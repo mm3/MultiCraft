@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- app_name -->
     <string name="app_name">MultiCraft — Free Miner!</string>
     <string name="start">Restart</string>
     <string name="About">About project "MultiCraft"</string>
@@ -14,9 +15,8 @@
     <string name="download">Downloading Zip File..</string>
     <string name="site"><i>Open Minetest Wiki</i></string>
     <string name="dev">Dev by MoNTE48 (MoNTE48@mail.ua), 2014</string>
-    <string name="wiki">http://wiki.minetest.com/wiki/</string>
     <string name="rmold">Remove old files&#8230;</string>
-    <string name="ver">0.4.11-dev | build 1.1.2</string>
+    <string name="ver">1.2</string>
     <string name="bad">Your game world is recreated!</string>
 
     <!-- rate -->
@@ -25,5 +25,10 @@
     <string name="rta_dialog_ok">BEST game!</string>
     <string name="rta_dialog_cancel">Remind later&#8230;</string>
     <string name="rta_dialog_no">A BAD game</string>
+
+    <!-- update -->
+    <string name="update_yes">Update now!</string>
+    <string name="update_no">Remind me later &#8230;</string>
+    <string name="update_ignore">Ignore</string>
 
 </resources>

@@ -6,11 +6,13 @@ import java.util.TimerTask;
 import android.app.NativeActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 public class MtNativeActivity extends NativeActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		m_MessagReturnCode = -1;
 		m_MessageReturnValue = "";
 	}

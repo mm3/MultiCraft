@@ -2,12 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.MoNTE48.MultiCraft"
     android:installLocation="auto"
-    android:versionCode="5"
+    android:versionCode="8"
     android:versionName="@string/ver" >
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="20" />
+
+    <supports-screens android:smallScreens="false" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
